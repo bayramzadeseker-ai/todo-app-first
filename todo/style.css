@@ -1,0 +1,70 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  transition: 0.3s;
+}
+
+.container {
+  width: 320px;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.theme {
+  margin-bottom: 10px;
+}
+
+.filters button {
+  margin: 5px;
+  background: #334155;
+}
+
+li {
+  list-style: none;
+  background: #1e293b;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* LIGHT MODE */
+.light {
+  background: #f1f5f9;
+  color: black;
+}
+.light li {
+  background: #e2e8f0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="/todo/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Todo App</h1>
+
+  <!-- THEME -->
+  <button class="theme" onclick="toggleTheme()">🌙</button>
+
+  <!-- INPUT -->
+  <div class="input-box">
+    <input type="text" id="taskInput" placeholder="Add a task...">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <!-- SEARCH -->
+  <input type="text" id="searchInput" placeholder="Search..." onkeyup="render()">
+
+  <!-- FILTER -->
+  <div class="filters">
+    <button onclick="setFilter('all')">All</button>
+    <button onclick="setFilter('active')">Active</button>
+    <button onclick="setFilter('done')">Completed</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+</div>
+
+<script src="/todo/app.js"></script>
+</body>
+</html>
